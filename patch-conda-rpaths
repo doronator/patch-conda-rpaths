@@ -72,7 +72,7 @@ def add_rpath(dylib, name):
     if "Mach-O dynamic shared library stub file" in stderr:
         print("Skipping Mach-O dynamic shared library stub file %s\n" % dylib)
         return
-    print(stderr, file=sys.stderr)
+    print >>sys.stderr,stderr
     if p.returncode:
         raise RuntimeError("install_name_tool failed with exit status %d" % p.returncode)
 
