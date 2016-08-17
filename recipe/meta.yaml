@@ -6,7 +6,7 @@ package:
 
 source:
   git_rev: {{ version }}
-  git_url: https://github.com/minrk/patch-conda-rpath
+  git_url: https://github.com/doronator/patch-conda-rpath
 
 build:
   skip: true  # [not osx]
@@ -24,7 +24,7 @@ test:
     - python
 
 about:
-  home: https://github.com/minrk/patch-conda-rpaths
+  home: https://github.com/doronator/patch-conda-rpaths
   license: MIT
   summary: "Patch conda dylibs to have proper @rpath"
 
